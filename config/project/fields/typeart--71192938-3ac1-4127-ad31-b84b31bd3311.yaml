@@ -1,0 +1,23 @@
+columnSuffix: null
+handle: typeart
+instructions: null
+name: TypeArt
+searchable: true
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: null
+  showCardsInGrid: false
+  showSiteMenu: false
+  sources:
+    - 'section:96bd7599-e4a4-40a8-ab89-35211233707f' # TypeArt
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

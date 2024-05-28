@@ -1,10 +1,10 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - af833298-bbc9-4e8f-900f-9614ab925d33 # product Detail
-handle: productdetail
+  - f27548b2-728f-420d-a867-bb344879dfe3 # Kleuren
+handle: kleuren
 maxAuthors: 1
-name: 'product Detail'
+name: Kleuren
 previewTargets:
   -
     __assoc__:
@@ -22,6 +22,9 @@ siteSettings:
   6a991982-8b5b-44cc-bf3a-4c08ded12bd5: # ShneakyShop
     enabledByDefault: true
     hasUrls: true
-    template: _snippits\_productDetail.twig
-    uriFormat: 'productDetail/{slug}'
-type: single
+    template: kleuren/_entry
+    uriFormat: 'kleuren/{slug}'
+structure:
+  maxLevels: null
+  uid: 965f490d-073f-4877-a219-f83c481c1cb7
+type: structure

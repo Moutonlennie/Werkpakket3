@@ -1,10 +1,10 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - af833298-bbc9-4e8f-900f-9614ab925d33 # product Detail
-handle: productdetail
+  - 1d3196e2-8fbe-4b0d-a22f-41284b7a7633 # TypeArt
+handle: typeart
 maxAuthors: 1
-name: 'product Detail'
+name: TypeArt
 previewTargets:
   -
     __assoc__:
@@ -22,6 +22,9 @@ siteSettings:
   6a991982-8b5b-44cc-bf3a-4c08ded12bd5: # ShneakyShop
     enabledByDefault: true
     hasUrls: true
-    template: _snippits\_productDetail.twig
-    uriFormat: 'productDetail/{slug}'
-type: single
+    template: typeart/_entry
+    uriFormat: 'typeart/{slug}'
+structure:
+  maxLevels: null
+  uid: 4fb87c29-bdc2-47bf-b185-c93f20ea4a10
+type: structure

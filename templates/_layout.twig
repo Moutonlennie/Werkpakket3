@@ -10,6 +10,7 @@
     <title>Shneaky Shop</title>
   </head>
 <body id="indexPage">
+{% hook 'after-body-start' %}
     {% include '_snippits/_navigatie.twig' %}
 
     {% block content %}

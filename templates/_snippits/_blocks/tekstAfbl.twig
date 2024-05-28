@@ -1,0 +1,6 @@
+{% set afbeelding = tekstafbl.afbeelding.one() %}
+<div>
+    <h1>{{ tekstafbl.title }}</h1>
+    <p>{{ tekstafbl.intro }}</p>
+    <img src="{{ afbeelding.url}}" alt="{{ tekstAfbl.title}}">
+</div>

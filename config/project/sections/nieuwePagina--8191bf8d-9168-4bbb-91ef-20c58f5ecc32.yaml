@@ -1,10 +1,10 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - af833298-bbc9-4e8f-900f-9614ab925d33 # product Detail
-handle: productdetail
+  - cf95cbf0-bf08-46fc-8193-5343b4f6c1ba # Nieuwe pagina
+handle: nieuwePagina
 maxAuthors: 1
-name: 'product Detail'
+name: 'Nieuwe pagina'
 previewTargets:
   -
     __assoc__:
@@ -22,6 +22,9 @@ siteSettings:
   6a991982-8b5b-44cc-bf3a-4c08ded12bd5: # ShneakyShop
     enabledByDefault: true
     hasUrls: true
-    template: _snippits\_productDetail.twig
-    uriFormat: 'productDetail/{slug}'
-type: single
+    template: _snippits/_nieuwePag.twig
+    uriFormat: 'nieuwe-pagina/{slug}'
+structure:
+  maxLevels: null
+  uid: 45e0b092-50e1-487e-a6db-6da365fc6241
+type: structure

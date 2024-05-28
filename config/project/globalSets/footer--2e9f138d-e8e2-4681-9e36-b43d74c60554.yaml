@@ -1,36 +1,21 @@
-color: null
 fieldLayouts:
-  0a7b95b1-ab07-4724-a822-cbf5b96faf96:
+  aa26cd34-73d0-4261-a17e-e88ffbcd1aa7:
     tabs:
       -
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            disabled: false
             elementCondition: null
-            id: null
+            fieldUid: d9d9d03e-ec07-40f8-8f51-fbe7f8298bf3 # Titel
+            handle: null
             includeInCards: false
-            inputType: null
             instructions: null
             label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
             providesThumbs: false
-            readonly: false
-            requirable: false
-            size: null
-            step: null
+            required: false
             tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 98a5c5c3-c246-4d3b-ad90-14fcc1380ece
+            type: craft\fieldlayoutelements\CustomField
+            uid: ea9890c4-d2c5-4fd1-9a6f-c86d785f9fb0
             userCondition: null
             warning: null
             width: 100
@@ -45,13 +30,13 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 9041742d-2623-4399-ae8d-1043a52d2e70
+            uid: d14acf8e-1b8c-4b5b-8078-a51befb21b1a
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 6cd3c6c6-8cd0-44a7-8dd3-09632aa47b02 # Blockbuilder
+            fieldUid: b5c8bf00-e14e-42d6-9122-62c5d0ae3c1e # Icoon
             handle: null
             includeInCards: false
             instructions: null
@@ -60,21 +45,13 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 80b260e2-7eea-4635-a36a-ebd099d0e4c5
+            uid: cecddae0-dc9b-4626-a286-9b7e502dc5ee
             userCondition: null
             warning: null
             width: 100
-        name: Content
-        uid: 3800b6e0-2f15-441d-beee-1fa3475d3169
+        name: footer
+        uid: dc38917e-ebbd-4ed9-8b09-487b53eb1784
         userCondition: null
-handle: home
-hasTitleField: true
-icon: house
-name: Home
-showSlugField: true
-showStatusField: true
-slugTranslationKeyFormat: null
-slugTranslationMethod: site
-titleFormat: ''
-titleTranslationKeyFormat: null
-titleTranslationMethod: site
+handle: footer
+name: Footer
+sortOrder: 2

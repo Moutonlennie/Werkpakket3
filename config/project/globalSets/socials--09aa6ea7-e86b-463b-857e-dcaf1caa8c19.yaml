@@ -1,0 +1,57 @@
+fieldLayouts:
+  2b9b974a-e5c3-467f-a50f-ef93b0936f8f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 36e138fb-6742-4afa-8475-54c076cc37ed # Facebook
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 72e0f1e9-02b7-4654-afcf-3d0bd71da99a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 85f30a28-cde1-498c-95c9-8d4c80ba197e # Instagram
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f9ecbda6-c01a-48bd-ad8c-b767c7b83344
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e7858763-80d5-413a-910b-a3e50cfad4f6 # Portfolio
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3ae4284d-2647-436f-91cc-74df960138d7
+            userCondition: null
+            warning: null
+            width: 100
+        name: Socials
+        uid: 469018d7-8f36-4c13-8b74-1665827f4e8a
+        userCondition: null
+handle: socials
+name: Socials
+sortOrder: 1

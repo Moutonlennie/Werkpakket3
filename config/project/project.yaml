@@ -1,4 +1,4 @@
-dateModified: 1716890718
+dateModified: 1716914092
 email:
   fromEmail: 12202563@student.pxl.be
   fromName: ShneakyShop
@@ -13,31 +13,60 @@ fs:
     url: /files
 meta:
   __names__:
+    1d3196e2-8fbe-4b0d-a22f-41284b7a7633: TypeArt # TypeArt
+    2e9f138d-e8e2-4681-9e36-b43d74c60554: Footer # Footer
+    3b9fed60-212c-4b72-9fa7-8cf7cf7d8acd: Kleuren # Kleuren
     3d355d5b-6b71-46c6-a406-c9799ed6941d: Intro # Intro
     4c4092ae-8bb3-461b-a4a2-956032db1be5: 'Contact Form' # Contact Form
     5c242c37-73c7-4e0c-99f7-64c0a1aa0692: Afbeeldingen # Afbeeldingen
     6a991982-8b5b-44cc-bf3a-4c08ded12bd5: ShneakyShop # ShneakyShop
-    48c90b91-f684-4d2c-80b8-8ebd566393af: productDetail # productDetail
+    6cd3c6c6-8cd0-44a7-8dd3-09632aa47b02: Blockbuilder # Blockbuilder
+    09aa6ea7-e86b-463b-857e-dcaf1caa8c19: Socials # Socials
+    36e138fb-6742-4afa-8475-54c076cc37ed: Facebook # Facebook
+    39e0a0b3-8e10-49a4-b04d-6f7e4fd70566: Kleuren # Kleuren
+    48c90b91-f684-4d2c-80b8-8ebd566393af: 'product Detail' # product Detail
     51f366a6-f61d-4f0c-8d89-c93a3d3278df: ShneakyShop # ShneakyShop
+    54d89519-d689-40ba-aa6e-6c3377c96c56: Formulier # Formulier
     70bedb0f-1ba3-41a0-b8cb-fb27986c2a2a: Home # Home
+    74b516f2-5691-4a0b-9539-06c65cb9e54c: Product # Product
+    85f30a28-cde1-498c-95c9-8d4c80ba197e: Instagram # Instagram
+    96bd7599-e4a4-40a8-ab89-35211233707f: TypeArt # TypeArt
     674c9617-94c4-4c98-8522-a0f7685cd01c: OmschrijvingLang # OmschrijvingLang
+    6540c610-5a99-4038-b064-0691f6726077: 'Tekst + afbl' # Tekst + afbl
     7784c795-aace-43ac-bc9e-71f273cc6dee: Afbeelding # Afbeelding
+    8191bf8d-9168-4bbb-91ef-20c58f5ecc32: 'Nieuwe pagina' # Nieuwe pagina
     8594c320-5045-45c6-8546-e7f5fcff8589: 'Product overzicht' # Product overzicht
     35208e51-f7fb-4412-95d1-79d51df3298f: Prijs # Prijs
     940896b3-8910-4e32-8e3a-4978629f090b: Home # Home
     6507036c-9192-42ef-aed9-0e42f1e6fe7b: New # New
     8765390e-a90a-4c51-ad99-9d81f5a8c2b7: Contact # Contact
+    71192938-3ac1-4127-ad31-b84b31bd3311: TypeArt # TypeArt
     73415993-ec38-43d2-8076-25e7370fef31: Producten # Producten
-    af833298-bbc9-4e8f-900f-9614ab925d33: productDetail # productDetail
+    af833298-bbc9-4e8f-900f-9614ab925d33: 'product Detail' # product Detail
+    b5c8bf00-e14e-42d6-9122-62c5d0ae3c1e: Icoon # Icoon
     b33e12b1-95f7-47c0-9c12-2940f8e22eb5: ContactFormulier # ContactFormulier
     cca50809-ca04-4bf5-8a97-c5906ed6c60f: Producten # Producten
+    cf95cbf0-bf08-46fc-8193-5343b4f6c1ba: 'Nieuwe pagina' # Nieuwe pagina
+    d9d9d03e-ec07-40f8-8f51-fbe7f8298bf3: Titel # Titel
     da342187-524c-418d-b613-a266ef20d4b5: 'Product overzicht' # Product overzicht
+    e7858763-80d5-413a-910b-a3e50cfad4f6: Portfolio # Portfolio
     ecb03c12-22aa-4417-a54a-98229f964cf0: Omschrijving # Omschrijving
+    f048fc76-169d-45f4-a863-089cec90ceb0: Producten # Producten
     f9c5dc8a-0d91-42d1-a942-b9c29171710d: Contact # Contact
+    f27548b2-728f-420d-a867-bb344879dfe3: Kleuren # Kleuren
 plugins:
+  cookie-consent:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.5.0
+  dumper:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   formie:
     edition: standard
     enabled: true
+    licenseKey: QQHUAPRSA61R7MJRKTBK4OBN
     schemaVersion: 3.4.4
   navigate:
     edition: standard
@@ -50,10 +79,3 @@ system:
   name: ShneakyShop
   schemaVersion: 5.0.0.20
   timeZone: America/Los_Angeles
-users:
-  allowPublicRegistration: false
-  defaultGroup: null
-  photoSubpath: null
-  photoVolumeUid: null
-  require2fa: false
-  requireEmailVerification: true

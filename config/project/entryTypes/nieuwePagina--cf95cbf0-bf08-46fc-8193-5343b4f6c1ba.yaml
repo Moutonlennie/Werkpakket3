@@ -1,6 +1,6 @@
 color: null
 fieldLayouts:
-  0a7b95b1-ab07-4724-a822-cbf5b96faf96:
+  d2d37d79-0a39-4271-9bc5-23bfc2856397:
     tabs:
       -
         elementCondition: null
@@ -30,22 +30,7 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 98a5c5c3-c246-4d3b-ad90-14fcc1380ece
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 3d355d5b-6b71-46c6-a406-c9799ed6941d # Intro
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 9041742d-2623-4399-ae8d-1043a52d2e70
+            uid: 9035ac5c-3e44-49c0-95ed-fd994d9944de
             userCondition: null
             warning: null
             width: 100
@@ -60,17 +45,17 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 80b260e2-7eea-4635-a36a-ebd099d0e4c5
+            uid: 19cbc308-6edd-4c06-a302-4bcb984a04f0
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 3800b6e0-2f15-441d-beee-1fa3475d3169
+        uid: 236de5ae-4d8e-40c8-845e-a9385bb46773
         userCondition: null
-handle: home
-hasTitleField: true
-icon: house
-name: Home
+handle: nieuwePagina
+hasTitleField: false
+icon: ''
+name: 'Nieuwe pagina'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

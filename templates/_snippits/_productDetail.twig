@@ -1,10 +1,12 @@
 {% extends '_layout.twig'%}
 
+{% set product = craft.entries.slug(craft.app.request.getSegment(2)).section('producten').one() %}
+
 {% block content %}
 
-  <button class="backButton" @click="goToProducts">Terug</button>
+  <button class="backButton">Terug</button>
         <div class="product">
-            <img src="{{ afbeelding.url }}" alt="{{ afbeelding.title }}"/>
+            {# <img src="{{ afbeelding.url }}" alt="{{ afbeelding.title }}"/> #}
             <div class="productDetails">
                 <div class="productDescription">
                     <h1>{{ product.title }}</h1>

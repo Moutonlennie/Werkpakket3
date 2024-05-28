@@ -1,0 +1,15 @@
+{% set productenQuery = craft.entries().section('producten').all %}
+
+    {% if productenQuery|length %}
+        <div class="carousel">
+            <ul class="carouselList">
+            
+                {% for product in productenQuery %}
+                <a href="{{ product.url }}">
+                    {% include '_snippits/_card.twig' with { product: product } %}
+                </a>
+                {% endfor %}
+            
+            </ul>
+        </div>
+    {% endif %}

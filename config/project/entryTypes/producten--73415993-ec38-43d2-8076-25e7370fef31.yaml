@@ -79,6 +79,36 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 39e0a0b3-8e10-49a4-b04d-6f7e4fd70566 # Kleuren
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e0578550-12f1-4fa1-8588-70c21379f847
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 71192938-3ac1-4127-ad31-b84b31bd3311 # TypeArt
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 585655c0-5e10-4218-a493-fe9657420ee3
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: dc700de6-b3fa-4a36-9f22-faf7c37f38f8
         userCondition: null

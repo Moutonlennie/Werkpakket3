@@ -1,17 +1,52 @@
 {% extends '_layout.twig'%}
-
 {% block content %}
+{# 
+{% set colorParam = craft.app.request.getParam('kleuren') %}
+{% set productEntries = craft.entries.section('producten') %}
+{% set relationParam = ['and'] %}
+
+{% if colorParam %}
+    {% set relationParam = relationParam| merge([{ targetElement:colorParam }]) %}
+{% endif %}
+
+{% if relationParam | length > 1 %}
+    {% set productEntries = productEntries.relatedTo(relationParam) %}
+{% endif %}
+
+{% set producten = productEntries.collect() %}
+
+{% if producten | length %}
+    {% include '_snippits/_card.twig' with {'block': producten} %}
+{% endif %} #}
+
+
+
 <main>
     {% set productenQuery = craft.entries().section('producten').limit(6) %}
+    {# <form>
+        <div class="filter">
+            {% for color in colors %}
+                <input type="checkbox" value="{{ color.id }}" name="color[]" {% if color.id in colorParam %} checked {% endif %}>
+                <label for="{{ color.id }}">{{ color.title }}</label>
+            {% endfor %}
+        </div>
+        <button type="submit">{{ "filter" | t }}</button>
+    </form> #}
+    
+    
 
     {% paginate productenQuery as pageInfo, pageEntries %}
 
     {% if pageEntries|length %}
         <div class="carousel">
             <ul class="carouselList">
+            
                 {% for product in pageEntries %}
+                <a href="{{ product.url }}">
                     {% include '_snippits/_card.twig' with { product: product } %}
+                </a>
                 {% endfor %}
+            
             </ul>
         </div>
     {% endif %}

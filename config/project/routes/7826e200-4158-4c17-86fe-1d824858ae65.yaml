@@ -1,6 +1,6 @@
 siteUid: null
 sortOrder: 1
-template: producten/_productdetail
+template: producten/_snippits/_productdetail
 uriParts:
   - producten/<slug>
 uriPattern: producten/<slug>
