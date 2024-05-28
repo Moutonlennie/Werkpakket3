@@ -1,62 +1,45 @@
-{% extends '_layout.twig'%}
+{% extends '_layout.twig' %}
 {% block content %}
 
 {% set productenQuery = craft.entries().section('producten').limit(6) %}
 
-{% set typeParam = craft.app.request.getParam('typeArt') %}
-{# {% set productEntries = craft.entries.section('producten') %} #}
-{% selectedType = typeParam ? typeParam| split(',') : [] %}
+{% set typeParam = craft.app.request.getParam('typeart') %}
 
-{% if selectedType| length %}
-    {% set productenQuery = productenQuery.relatedTo({ targetElement: selectedType, field: 'typeArt' }) %}
+{% if typeParam is iterable %}
+    {% set selectedType = typeParam %}
+{% else %}
+    {% set selectedType = typeParam ? typeParam|split(',') : [] %}
 {% endif %}
 
-{# {% set relationParam = ['and'] %} #}
-
-{# {% if colorParam %}
-    {% set relationParam = relationParam| merge([{ targetElement:colorParam }]) %}
-{% endif %} #}
-
-{# {% if relationParam | length > 1 %}
-    {% set productEntries = productEntries.relatedTo(relationParam) %}
+{% if selectedType|length %}
+    {% set productenQuery = productenQuery.relatedTo({ targetElement: selectedType, field: 'typeart' }) %}
 {% endif %}
-
-{% set producten = productEntries.collect() %}
-
-{% if producten | length %}
-    {% include '_snippits/_card.twig' with {'block': producten} %}
-{% endif %} #}
 
 {% paginate productenQuery as pageInfo, pageEntries %}
 
-{% set typeArt = craft.entries.section('typeArt').all() %}
+{% set typeArts = craft.entries.section('typeart').all() %}
 
 <main>
     <form>
         <div class="filter">
-            {% if  %}
-            {# {% for color in colors %}
-                <input type="checkbox" value="{{ color.id }}" name="color[]" {% if color.id in colorParam %} checked {% endif %}>
-                <label for="{{ color.id }}">{{ color.title }}</label>
-            {% endfor %} #}
+            {% for typeArt in typeArts %}
+                {% set isSelected = typeArt.id in selectedType %}
+                <label>
+                    <input type="checkbox" name="typeart[]" value="{{ typeArt.id }}" {% if isSelected %}checked{% endif %} onchange="this.form.submit()">
+                    {{ typeArt.title }}
+                </label>
+            {% endfor %}
         </div>
-        <button type="submit">{{ "filter" | t }}</button>
     </form>
-    
-    
-
-    
 
     {% if pageEntries|length %}
         <div class="carousel">
             <ul class="carouselList">
-            
                 {% for product in pageEntries %}
-                <a href="{{ product.url }}">
-                    {% include '_snippits/_card.twig' with { product: product } %}
-                </a>
+                    <a href="{{ product.url }}">
+                        {% include '_snippits/_card.twig' with { product: product } %}
+                    </a>
                 {% endfor %}
-            
             </ul>
         </div>
     {% endif %}

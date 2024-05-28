@@ -6,9 +6,11 @@
 
 {% block content %}
 
-  <button class="backButton">Terug</button>
+{% set afbeelding = product.afbeelding.one() %}
+
+
         <div class="product">
-            {# <img src="{{ afbeelding.url }}" alt="{{ afbeelding.title }}"/> #}
+            <img src="{{ afbeelding.url }}" alt="{{ product.title }}"/>
             <div class="productDetails">
                 <div class="productDescription">
                     <h1>{{ product.title }}</h1>
