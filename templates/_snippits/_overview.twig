@@ -1,15 +1,23 @@
 {% extends '_layout.twig'%}
 {% block content %}
-{# 
-{% set colorParam = craft.app.request.getParam('kleuren') %}
-{% set productEntries = craft.entries.section('producten') %}
-{% set relationParam = ['and'] %}
 
-{% if colorParam %}
-    {% set relationParam = relationParam| merge([{ targetElement:colorParam }]) %}
+{% set productenQuery = craft.entries().section('producten').limit(6) %}
+
+{% set typeParam = craft.app.request.getParam('typeArt') %}
+{# {% set productEntries = craft.entries.section('producten') %} #}
+{% selectedType = typeParam ? typeParam| split(',') : [] %}
+
+{% if selectedType| length %}
+    {% set productenQuery = productenQuery.relatedTo({ targetElement: selectedType, field: 'typeArt' }) %}
 {% endif %}
 
-{% if relationParam | length > 1 %}
+{# {% set relationParam = ['and'] %} #}
+
+{# {% if colorParam %}
+    {% set relationParam = relationParam| merge([{ targetElement:colorParam }]) %}
+{% endif %} #}
+
+{# {% if relationParam | length > 1 %}
     {% set productEntries = productEntries.relatedTo(relationParam) %}
 {% endif %}
 
@@ -19,23 +27,25 @@
     {% include '_snippits/_card.twig' with {'block': producten} %}
 {% endif %} #}
 
+{% paginate productenQuery as pageInfo, pageEntries %}
 
+{% set typeArt = craft.entries.section('typeArt').all() %}
 
 <main>
-    {% set productenQuery = craft.entries().section('producten').limit(6) %}
-    {# <form>
+    <form>
         <div class="filter">
-            {% for color in colors %}
+            {% if  %}
+            {# {% for color in colors %}
                 <input type="checkbox" value="{{ color.id }}" name="color[]" {% if color.id in colorParam %} checked {% endif %}>
                 <label for="{{ color.id }}">{{ color.title }}</label>
-            {% endfor %}
+            {% endfor %} #}
         </div>
         <button type="submit">{{ "filter" | t }}</button>
-    </form> #}
+    </form>
     
     
 
-    {% paginate productenQuery as pageInfo, pageEntries %}
+    
 
     {% if pageEntries|length %}
         <div class="carousel">

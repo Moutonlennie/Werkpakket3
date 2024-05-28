@@ -1,6 +1,8 @@
 {% extends '_layout.twig'%}
 
-{% set product = craft.entries.slug(craft.app.request.getSegment(2)).section('producten').one() %}
+
+{% set slug = craft.app.request.getSegment(2) %}
+{% set product = craft.entries.section('producten').slug(slug).one() %}
 
 {% block content %}
 
@@ -10,7 +12,7 @@
             <div class="productDetails">
                 <div class="productDescription">
                     <h1>{{ product.title }}</h1>
-                    <p>{{ product.beschrijving }}</p>
+                    <p>{{ product.omschrijving }}</p>
                     {# <p>{{ product.longDescription }}</p> #}
                     <ul>
                         {# <li class="tags">{{ tag}} </li> #}
@@ -20,5 +22,4 @@
                     <div >
                     <p id="prijs">€ {{ product.prijs|money('be') }}</p>
                     </div>
-
 {% endblock %}

@@ -22,7 +22,7 @@ siteSettings:
   6a991982-8b5b-44cc-bf3a-4c08ded12bd5: # ShneakyShop
     enabledByDefault: true
     hasUrls: true
-    template: _snippits\_card.twig
+    template: _snippits\_productDetail.twig
     uriFormat: 'producten/{slug}'
 structure:
   maxLevels: null
