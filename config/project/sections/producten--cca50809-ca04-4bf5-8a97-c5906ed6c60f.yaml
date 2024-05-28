@@ -1,0 +1,30 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 73415993-ec38-43d2-8076-25e7370fef31 # Producten
+handle: producten
+maxAuthors: 1
+name: Producten
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  6a991982-8b5b-44cc-bf3a-4c08ded12bd5: # ShneakyShop
+    enabledByDefault: true
+    hasUrls: true
+    template: _card.twig
+    uriFormat: 'producten/{slug}'
+structure:
+  maxLevels: null
+  uid: 5a87cd42-a5ef-4b74-a086-ff29a1acb650
+type: structure

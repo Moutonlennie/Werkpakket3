@@ -1,0 +1,13 @@
+    <li class="productCard">
+    <a href="{{ product.url }}">
+        {% set afbeelding = product.afbeelding.one() %}
+        <div>
+            <img src="{{ afbeelding.url }}" alt="{{ product.title }}"/>
+        </div>
+        <h3>{{ product.title }}</h3>
+        {# <div class="productCardDescription">
+            <p class="productCardPrice">€ {{ product.prijs|money('be') }}</p>
+            <p>{{ product.omschrijving }}</p>
+        </div> #}
+        </a>
+    </li>

@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - da342187-524c-418d-b613-a266ef20d4b5 # Product overzicht
+handle: productOverzicht
+maxAuthors: 1
+name: 'Product overzicht'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  6a991982-8b5b-44cc-bf3a-4c08ded12bd5: # ShneakyShop
+    enabledByDefault: true
+    hasUrls: true
+    template: _snippits\_overview.twig
+    uriFormat: producten
+type: single

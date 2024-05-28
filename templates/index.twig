@@ -1,0 +1,19 @@
+{% extends '_layout.twig' %}
+{% block content %}
+        <header class="headerCenter">
+            <h1>Shneaky Designs!</h1>
+            <p>Get some awesome prints for an awesome price!</p>
+        </header>
+        {% set producten = craft.entries.section('producten').limit(3) %}
+        {% if producten|length %}
+            <div class="carousel">
+            <ul class="carouselList">
+                {% for product in producten %}
+                    {% include '_snippits/_card.twig' %}
+                {% endfor %}
+            </ul>
+            </div>
+        {% endif %}
+
+{% endblock %}
+ 

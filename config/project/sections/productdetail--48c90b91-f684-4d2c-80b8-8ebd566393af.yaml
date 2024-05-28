@@ -1,0 +1,30 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - af833298-bbc9-4e8f-900f-9614ab925d33 # productDetail
+handle: productdetail
+maxAuthors: 1
+name: productDetail
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  6a991982-8b5b-44cc-bf3a-4c08ded12bd5: # ShneakyShop
+    enabledByDefault: true
+    hasUrls: true
+    template: _snippits\_productDetail.twig
+    uriFormat: 'productdetail/{slug}'
+structure:
+  maxLevels: null
+  uid: a44a39ea-b13e-4617-860e-89efb10bf60f
+type: structure

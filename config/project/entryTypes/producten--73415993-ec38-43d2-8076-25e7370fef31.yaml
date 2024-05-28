@@ -1,0 +1,95 @@
+color: null
+fieldLayouts:
+  afad8ae6-06f3-4a86-95da-6edf69217176:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: c219b114-06db-4402-9b67-78638bfe2e07
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 35208e51-f7fb-4412-95d1-79d51df3298f # Prijs
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d4bf5fd4-e241-47c0-9cda-dd8e75935c06
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ecb03c12-22aa-4417-a54a-98229f964cf0 # Omschrijving
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bd53e7a1-5a1e-4790-a93f-62eab9ba9619
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7784c795-aace-43ac-bc9e-71f273cc6dee # Afbeelding
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2af2dc5c-85c2-4060-8090-7e3b488d6c6f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: dc700de6-b3fa-4a36-9f22-faf7c37f38f8
+        userCondition: null
+handle: producten
+hasTitleField: true
+icon: rectangle-history
+name: Producten
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

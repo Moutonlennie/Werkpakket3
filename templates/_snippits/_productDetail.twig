@@ -1,0 +1,22 @@
+{% extends '_layout.twig'%}
+
+{% block content %}
+
+  <button class="backButton" @click="goToProducts">Terug</button>
+        <div class="product">
+            <img src="{{ afbeelding.url }}" alt="{{ afbeelding.title }}"/>
+            <div class="productDetails">
+                <div class="productDescription">
+                    <h1>{{ product.title }}</h1>
+                    <p>{{ product.beschrijving }}</p>
+                    {# <p>{{ product.longDescription }}</p> #}
+                    <ul>
+                        {# <li class="tags">{{ tag}} </li> #}
+                    </ul>
+                </div>
+                <div class="productPrijsCart">
+                    <div >
+                    <p id="prijs">€ {{ product.prijs|money('be') }}</p>
+                    </div>
+
+{% endblock %}

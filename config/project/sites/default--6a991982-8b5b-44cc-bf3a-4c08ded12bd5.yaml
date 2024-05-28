@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-US
+name: ShneakyShop
+primary: true
+siteGroup: 51f366a6-f61d-4f0c-8d89-c93a3d3278df # ShneakyShop
+sortOrder: 1

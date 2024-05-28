@@ -1,0 +1,28 @@
+{% extends '_layout.twig'%}
+
+{% block content %}
+<main>
+    {% set productenQuery = craft.entries().section('producten').limit(6) %}
+
+    {% paginate productenQuery as pageInfo, pageEntries %}
+
+    {% if pageEntries|length %}
+        <div class="carousel">
+            <ul class="carouselList">
+                {% for product in pageEntries %}
+                    {% include '_snippits/_card.twig' with { product: product } %}
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+
+    <div class="pagination">
+        {% if pageInfo.prevUrl %}
+            <a href="{{ pageInfo.prevUrl }}"><</a>
+        {% endif %}
+        {% if pageInfo.nextUrl %}
+            <a href="{{ pageInfo.nextUrl }}">></a>
+        {% endif %}
+    </div>
+</main>
+{% endblock %}
