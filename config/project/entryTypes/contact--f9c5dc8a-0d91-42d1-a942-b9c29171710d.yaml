@@ -34,6 +34,36 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 3d355d5b-6b71-46c6-a406-c9799ed6941d # Intro
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a1a3815d-64e3-490f-a449-466aa3581409
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b33e12b1-95f7-47c0-9c12-2940f8e22eb5 # ContactFormulier
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1c099092-228a-4d96-b56b-aedcb365e42e
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: c9712fca-4c1c-4dc3-80a8-f4f7644bfad4
         userCondition: null

@@ -1,4 +1,4 @@
-dateModified: 1716886042
+dateModified: 1716890718
 email:
   fromEmail: 12202563@student.pxl.be
   fromName: ShneakyShop
@@ -14,6 +14,7 @@ fs:
 meta:
   __names__:
     3d355d5b-6b71-46c6-a406-c9799ed6941d: Intro # Intro
+    4c4092ae-8bb3-461b-a4a2-956032db1be5: 'Contact Form' # Contact Form
     5c242c37-73c7-4e0c-99f7-64c0a1aa0692: Afbeeldingen # Afbeeldingen
     6a991982-8b5b-44cc-bf3a-4c08ded12bd5: ShneakyShop # ShneakyShop
     48c90b91-f684-4d2c-80b8-8ebd566393af: productDetail # productDetail
@@ -24,14 +25,20 @@ meta:
     8594c320-5045-45c6-8546-e7f5fcff8589: 'Product overzicht' # Product overzicht
     35208e51-f7fb-4412-95d1-79d51df3298f: Prijs # Prijs
     940896b3-8910-4e32-8e3a-4978629f090b: Home # Home
+    6507036c-9192-42ef-aed9-0e42f1e6fe7b: New # New
     8765390e-a90a-4c51-ad99-9d81f5a8c2b7: Contact # Contact
     73415993-ec38-43d2-8076-25e7370fef31: Producten # Producten
     af833298-bbc9-4e8f-900f-9614ab925d33: productDetail # productDetail
+    b33e12b1-95f7-47c0-9c12-2940f8e22eb5: ContactFormulier # ContactFormulier
     cca50809-ca04-4bf5-8a97-c5906ed6c60f: Producten # Producten
     da342187-524c-418d-b613-a266ef20d4b5: 'Product overzicht' # Product overzicht
     ecb03c12-22aa-4417-a54a-98229f964cf0: Omschrijving # Omschrijving
     f9c5dc8a-0d91-42d1-a942-b9c29171710d: Contact # Contact
 plugins:
+  formie:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.4.4
   navigate:
     edition: standard
     enabled: true

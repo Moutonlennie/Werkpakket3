@@ -21,7 +21,7 @@ propagationMethod: all
 siteSettings:
   6a991982-8b5b-44cc-bf3a-4c08ded12bd5: # ShneakyShop
     enabledByDefault: true
-    hasUrls: false
-    template: null
-    uriFormat: null
+    hasUrls: true
+    template: _snippits\_contact.twig
+    uriFormat: contact
 type: single
