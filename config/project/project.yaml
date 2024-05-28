@@ -1,4 +1,4 @@
-dateModified: 1716824161
+dateModified: 1716886042
 email:
   fromEmail: 12202563@student.pxl.be
   fromName: ShneakyShop
@@ -31,6 +31,12 @@ meta:
     da342187-524c-418d-b613-a266ef20d4b5: 'Product overzicht' # Product overzicht
     ecb03c12-22aa-4417-a54a-98229f964cf0: Omschrijving # Omschrijving
     f9c5dc8a-0d91-42d1-a942-b9c29171710d: Contact # Contact
+plugins:
+  navigate:
+    edition: standard
+    enabled: true
+    licenseKey: OJFUR8YIKEEPE30B3Q4LXZK0
+    schemaVersion: 2.4.0
 system:
   edition: solo
   live: true

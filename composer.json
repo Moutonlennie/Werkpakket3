@@ -3,6 +3,7 @@
   "prefer-stable": true,
   "require": {
     "craftcms/cms": "5.1.7",
+    "studioespresso/craft-navigate": "5.1.2",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {
